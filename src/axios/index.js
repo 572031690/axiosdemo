@@ -8,8 +8,8 @@ import APIUrl from "./api.url";
 axios.defaults.timeout = 5000; // 超时默认值
 axios.defaults.baseURL = APIUrl.baseURL; // 默认baseURL
 // axios.defaults.responseType  = 'json'         // 默认数据响应类型
-axios.defaults.headers.common["Content-Type"] =
-  "application/json;charset=UTF-8"; // 请求的时候，我们需要加上一个请求头，所以可以在这里进行一个默认的设置
+// 请求的时候，我们需要加上一个请求头，所以可以在这里进行一个默认的设置
+axios.defaults.headers.common["Content-Type"] ="application/json;charset=UTF-8"; 
 axios.defaults.withCredentials = true; // 表示跨域请求时是否需要使用凭证
 
 // http request 拦截器 全局请求拦截

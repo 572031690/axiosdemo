@@ -13,21 +13,11 @@ export default [
     name: "showModuleList",
     method: "GET",
     desc: "获取模块列表",
-    path: "organization/sysUserResourceApply/showModuleList",
+    path: "/example/1626933858631",
     mock: false,
     params: {
       username: "",
       password: ""
-    }
-  },
-  {
-    name: "deleteModule",
-    method: "GET",
-    desc: "删除模板",
-    path: "organization/sysUserResourceApply/deleteModule",
-    mock: false,
-    params: {
-      id: ""
     }
   }
 ];

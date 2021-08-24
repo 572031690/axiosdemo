@@ -8,11 +8,13 @@ import _camelCase from "lodash/camelCase";
 
 const requireModule = require.context("./module", true, /\.js$/);
 const modules = {};
+// console.log('requireModule.keys()',requireModule.keys());
 requireModule.keys().forEach(fileName => {
   if (fileName === "./index.js") return;
   let moduleName = "";
   if (fileName.split("/").length > 2) {
     moduleName = fileName.replace(/(\.\/|\.js)/g, "");
+    console.log(moduleName,'moduleName');
   } else {
     moduleName = _camelCase(fileName.replace(/(\.\/|\.js)/g, ""));
   }

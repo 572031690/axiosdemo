@@ -20,7 +20,7 @@ export default {
     };
   },
   mounted() {
-    this.getAxios();
+    // this.getAxios();
     console.log(this.$serapi, "serapiserapi");
 
     // console.log(this.$sendapi("mjh/home/showModuleList"), "serapiserapi");
@@ -29,7 +29,9 @@ export default {
         username: "马家辉",
         password: 12354
       }
-    });
+    }).then(res => {
+      console.log('发送传过来',res);
+    })
   },
   methods: {
     getAxios() {

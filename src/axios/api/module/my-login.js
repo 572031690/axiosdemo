@@ -5,6 +5,8 @@ export default [
     desc: "获取模块列表",
     path: "organization/sysUserResourceApply/showModuleList",
     mock: false,
-    params: {}
+    params: {
+      username:''
+    }
   }
 ];
